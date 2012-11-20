@@ -2,7 +2,7 @@ class UserAgentsController < ApplicationController
   # GET /user_agents
   # GET /user_agents.json
   def index
-    @user_agents = UserAgent.all
+    @user_agents = UserAgent.order('last_seen_at DESC')
 
     respond_to do |format|
       format.html # index.html.erb

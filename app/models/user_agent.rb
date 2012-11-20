@@ -1,3 +1,3 @@
 class UserAgent < ActiveRecord::Base
-  attr_accessible :last_seen_at, :original, :visits
+  attr_accessible :original
 end
