@@ -1,5 +1,5 @@
 DoubleAgent::Application.routes.draw do
-  resources :user_agents
+  resources :user_agents, only: [:index, :show]
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
