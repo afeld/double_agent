@@ -5,6 +5,7 @@
 <table>
   <tr>
     <th>Original</th>
+    <th>Description</th>
     <th>Visits</th>
     <th>Last seen at</th>
     <th></th>
@@ -15,6 +16,7 @@
 <% @user_agents.each do |user_agent| %>
   <tr class="userAgent <%= 'mine' if user_agent == @my_ua %>">
     <td><%= user_agent.original %></td>
+    <td><%= user_agent.description %></td>
     <td><%= user_agent.visits %></td>
     <td><%= user_agent.last_seen_at %></td>
     <td><%= link_to 'Show', user_agent %></td>
