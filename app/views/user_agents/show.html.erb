@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Original:</b>
+  <%= @user_agent.original %>
+</p>
+
+<p>
+  <b>Visits:</b>
+  <%= @user_agent.visits %>
+</p>
+
+<p>
+  <b>Last seen at:</b>
+  <%= @user_agent.last_seen_at %>
+</p>
+
+
+<%= link_to 'Edit', edit_user_agent_path(@user_agent) %> |
+<%= link_to 'Back', user_agents_path %>
